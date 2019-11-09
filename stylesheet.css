@@ -1,0 +1,123 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'helvetica', sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: #000000;
+  border-width: 0px;
+  margin: 0px;
+  text-align: ""
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin-left: 80px;
+  padding: 5px;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0px;
+  position: top;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+form {
+  display: block;
+  width: 375px;
+  background-color: #ffffff;
+  border: none;
+  padding: 20px;
+  margin: auto;
+}
+
+input {
+  width: 375px;
+  height: 30px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  padding: 5px 5px 5px 5px;
+}
+
+select {
+  width: 380px;
+  height: 40px;
+  margin: 0px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  margin-top: 10px !important;
+}
+
+#beans {
+  position: justify; 
+  padding: 0px;
+  margin: 0px;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.subscription {
+  display: block;
+  position: flex;
+  padding: auto;
+  margin: 0px;
+}
+
+#newsletter {
+  position: static; 
+  padding: auto;
+  margin: 5px;
+  height: 15px;
+}
+
+.checkbox input {
+  padding: 5px;
+  width: 30px;
+  border: 1px solid #000000;
+  margin: 40px;
+}
+
+.subscription label,
+.subscription input {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.subscription input {
+  margin-right: 5px;
+}
+
+.subscription-title {
+  margin-bottom: 5px;
+}
+
+button {
+  width: 380px;
+  padding: 15px 20px 15px 20px;
+  margin: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: #000000;
+    color: #ffffff;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Milestone 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+  </head>
+  <body>
+    <header>
+      <nav class="">
+        <ul>
+          <li><a href="#">My coffee plan</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Basket</a></li>
+
+        </ul>
+      </nav>
+    </header> 
+    <section>
+
+      <form action="input" method="POST">
+      <h1>Create Your Coffee Bean Plan</h1><br>
+        
+        <section class="name">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </section><br>
+        
+       <section class="surname">
+          <label for="surname">Surname</label>
+          <input type="text" name="surname" id="surname">
+        </section><br>
+        
+        <section class="email">
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email">
+        </section><br>
+        
+        <section class="password">
+          <label for="Email">Password</label>
+          <input type="password" name="password" id="password">
+        </section><br>
+        
+        <section class="bean-type">
+        <label for="bean-type">How do you like your coffee beans?</label><br>
+          
+        <select name="beans" id="beans">
+        <option value="grindmyself">I'll grind them myself</option>
+        <option value="coarse">Coarse (French press)</option>
+        <option value="medium-fine">Medium-fine (filter)</option>
+        <option value="fine">Fine (Espresso)</option><br>  
+        </select>
+        </section><br>
+        
+        <section class="subscription">
+          <div class="subscription-title">How often would you like Coffee Beans sent?</div>
+          <div>
+          <input type="radio" name="subscription" id="weekly" value="weekly">
+          <label for="weekly">Weekly - £49.95 per month</label>
+          </div>
+          <div>
+          <input type="radio" name="subscription" id="monthly" value="monthly">
+          <label for="monthly">Monthly - £12.99 per month</label>
+          </div>
+        </section><br>
+        
+        <section class="checkbox">
+          <input type="checkbox" id="newsletter" name="newsletter" value="#">
+          <label for="newsletter">Tick box to sign up to our Newsletter</label>
+          </section><br>
+        
+        <section>
+          <button type="submit">Submit</button>
+        </section>
+                
+        <section align="center">
+          <p>Already a member? 
+          <a href="sign-in.html">Sign in here</a>
+        </section>
+      </form>     
+    </section> 
+    
+    <footer>This is the footer</footer>
+  
+  </body>
+</html>
+  
