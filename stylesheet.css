@@ -21,11 +21,12 @@ nav {
   margin: 0px;
   text-align: ""
 }
-
+@media screen and (min-width: 600px) {
 .navstate a {
   font-family: helvetica;
   font-size: 16px;
   transition: 0.1s font-size linear;
+}
 }
 .navstate a:hover {
   font-family: helvetica;
