@@ -1,9 +1,28 @@
-
 h1 {
-  color:black
+  color: #0A0705;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  color: #ffffff;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.regular {
+	font-weight: 800;
+  color: #CC9B65;
 }
 
 p { 
+  color: #0A0705;
   text-align: center;
 }
 
@@ -11,15 +30,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'helvetica', sans-serif;
+  font-size: 1rem;
+  font-style: regular;
 }
 
 nav {
   display: flex;
   height: 100px;
-  background-color: #000000;
+  background-color: #0A0705;
   border-width: 0px;
   margin: 0px;
-  text-align: ""
 }
 @media screen and (min-width: 600px) {
 .navstate a {
@@ -54,7 +74,7 @@ li a {
 
 form {
   display: block;
-  width: 375px;
+  width: 400px;
   background-color: #ffffff;
   border: none;
   padding: 20px;
@@ -129,17 +149,19 @@ button {
   padding: 15px 20px 15px 20px;
   margin: 5px;
   color: #ffffff;
-  background-color: #000000;
-  font-size: 18px;
+  background-color: #CC9B65;
+  font-size: 1.125rem;
   text-align: center;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 64px;
+  margin-top: 32px;
 }
 
 footer {
     display: flex;
-    justify-content: center;
     padding: 60px;
-    background-color: #000000;
+    background-color: #322C25;
     color: #ffffff;
+    height: 100px;
+    text-decoration: none;
 }

@@ -9,6 +9,7 @@
   <body>
     <header>
       <nav>
+        <h2 class="brand">My<span class="regular">Coffee</span>Shop</h2>
         <ul>
           <li class="navstate"><a href="./index.html">My coffee plan</a></li>
           <li class="navstate"><a href="./shop.html">Shop</a></li>
@@ -20,28 +21,27 @@
         </ul>
       </nav>
     </header> 
-    <section>
+    <section class=formbody>
 
       <form action="input" method="POST">
-      <h1>Create Your Coffee Bean Plan</h1><br>
-        
+      <h1>Create Your Coffee Bean Plan</h1>
         <section class="name">
-          <label for="name">Name</label>
+          <label for="name">Name*</label>
           <input type="text" name="name" id="name">
         </section><br>
         
        <section class="surname">
-          <label for="surname">Surname</label>
+          <label for="surname">Surname*</label>
           <input type="text" name="surname" id="surname">
         </section><br>
         
         <section class="email">
-          <label for="email">Email address</label>
+          <label for="email">Email address*</label>
           <input type="email" name="email" id="email">
         </section><br>
         
         <section class="password">
-          <label for="Email">Password</label>
+          <label for="Email">Password*</label>
           <input type="password" name="password" id="password">
         </section><br>
         
@@ -77,14 +77,23 @@
           <button type="submit">Submit</button>
         </section>
                 
-        <section align="center">
-          <p>Already a member? 
-          <a href="sign-in.html">Sign in here</a>
+        <section>
+
         </section>
       </form>     
     </section> 
     
-    <p>Already a member? <a href="sign-in.html">Sign in here</a></p>
+    <footer class="footer">
+      <section class="footernav">
+        <ul>
+          <li><a href="">Link1</a></li>
+          <li><a href="">Link2</a></li>
+          <li><a href="">Link3</a></li>
+          <li><a href="">Link4</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+      </section>
+    </footer> 
   </body>
-</html>  
-  
+</html>
