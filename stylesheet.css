@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 h1 {
   color: #0A0705;
   padding-bottom: 32px;
@@ -11,7 +15,7 @@ h2 {
   display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
-  padding-left: 64px;
+  padding-left: 20px;
   font-size: 1.5rem;
   font-weight: 200;
 }
@@ -41,7 +45,9 @@ nav {
   border-width: 0px;
   margin: 0px;
 }
-@media screen and (min-width: 600px) {
+
+
+@media screen and (min-width: 640px) {
 .navstate a {
   font-family: helvetica;
   font-size: 16px;
@@ -61,6 +67,12 @@ ul {
   list-style-type: none;
   margin-left: 80px;
   padding: 5px;
+}
+
+@media screen and (max-width: 640px){
+    li {
+  display: none;
+    }
 }
 
 li a {
