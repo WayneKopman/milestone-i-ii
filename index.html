@@ -8,18 +8,23 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h2 class="brand">My<span class="regular">Coffee</span>Shop</h2>
-        <ul>
-          <li class="navstate"><a href="./index.html">My coffee plan</a></li>
-          <li class="navstate"><a href="./shop.html">Shop</a></li>
-          <li class="navstate"><a href="./about.html">About us</a></li>
-          <li class="navstate"><a href="#">Contact us</a></li>
-          <li class="navstate"><a href="#">Login</a></li>
-          <li class="navstate"><a href="#">Basket</a></li>
-
-        </ul>
-      </nav>
+      <head>
+        <title>TheCoffeeBeanCo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width"> 
+        <link href="stylesheet2.css" rel="stylesheet" type="text/css"/>
+        <script src="shoppingcart.js" async></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+                <ul>
+                    <li><a href="shoppingcart.html">STORE</a></li>
+                    <li><a href="index.html">SUBSCRIPTION</a></li>
+                    <li><a href="about.html">OUR COFFEE</a></li>
+                </ul>
+            </nav>
+            <h1 class="shop-name shop-name-large">TheCoffeeBeanCo</h1>
     </header> 
     <main>
     <section class=formbody>
@@ -29,11 +34,6 @@
         <section class="name">
           <label for="name">Name*</label>
           <input type="text" name="name" id="name">
-        </section><br>
-        
-       <section class="surname">
-          <label for="surname">Surname*</label>
-          <input type="text" name="surname" id="surname">
         </section><br>
         
         <section class="email">
@@ -75,7 +75,8 @@
           </section><br>
         
         <section>
-          <button type="submit">Submit</button>
+          <button class="btn btn-primary btn-purchase" input id="submitBtn" type="submit">Submit
+          </button>
         </section>
                 
         <section>
@@ -84,17 +85,17 @@
       </form>     
     </section> 
   </main>   
-    <footer class="footer">
-      <section class="footernav">
-        <ul>
-          <li><a href="">Link1</a></li>
-          <li><a href="">Link2</a></li>
-          <li><a href="">Link3</a></li>
-          <li><a href="">Link4</a></li>
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="band-name"></h3>
+        <ul class="nav footer-nav">
+            <li>
+                <a href="" target="">
+                </a>
+            </li>
         </ul>
-      </section>
-      <section class="copyright">
-      </section>
-    </footer> 
+    </div>
+</footer>
+ 
   </body>
 </html>
