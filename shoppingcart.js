@@ -1,4 +1,4 @@
-// checks to see if document is loaded before trying to access different elementsr
+// checks to see if document is loaded before trying to access different elements
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -61,7 +61,7 @@ function addItemToCart(title, price, imageSrc) {
     cartRow.classList.add('cart-row')
     let cartItems = document.getElementsByClassName('cart-items')[0]
     let cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-//stops items in basket duplicating 
+    //stops items in basket duplicating 
     for (let i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already in your cart')
@@ -72,15 +72,14 @@ function addItemToCart(title, price, imageSrc) {
     <div class="cart-item cart-column">
     <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
     <span class="cart-item-title">${title}</span>
-</div>
-<span class="cart-price cart-column">${price}</span>
-<div class="cart-quantity cart-column">
+    </div><span class="cart-price cart-column">${price}</span>
+    <div class="cart-quantity cart-column">
     <input class="cart-quantity-input" type="number" value="1">
     <button class="btn btn-danger" type="button">REMOVE</button>
-</div>`
+    </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
-//removes cart items after they've been added
+    //removes cart items after they've been added
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
@@ -98,7 +97,7 @@ function updateCartTotal() {
         let quantity = quantityElement.value
         total = total + (price * quantity)
     }
-//rounds total to two decimal places
+    //rounds total to two decimal places
     total = total = Math.round(total * 100) / 100 
     document.getElementsByClassName('cart-total-price')[0].innerText = '£' + total
 }
